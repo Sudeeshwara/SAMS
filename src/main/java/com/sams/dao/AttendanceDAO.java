@@ -80,10 +80,7 @@ public class AttendanceDAO {
         }
     }
 
-    // ═══════════════════════════════════════════
     //  REPORT QUERIES
-    // ═══════════════════════════════════════════
-
     /**
      * Full attendance report, filterable by student, subject, and/or date range.
      * Pass -1 / null to skip a filter.
@@ -139,7 +136,7 @@ public class AttendanceDAO {
         return list;
     }
 
-    // ── Mapper ─────────────────────────────────────────────────
+    //Mapper
     private Attendance mapAttendance(ResultSet rs) throws SQLException {
         Timestamp ts = rs.getTimestamp("marked_at");
         return new Attendance(

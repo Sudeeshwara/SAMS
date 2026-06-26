@@ -23,7 +23,7 @@ public class User {
         this.role     = role;
     }
 
-    // ── Getters & Setters ──────────────────────────────────────
+    //Getters & Setters
     public int    getUserId()              { return userId; }
     public void   setUserId(int userId)    { this.userId = userId; }
 

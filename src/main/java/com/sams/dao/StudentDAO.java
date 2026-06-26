@@ -110,7 +110,7 @@ public class StudentDAO {
         }
     }
 
-    // ── Mapper ─────────────────────────────────────────────────
+    //Mapper
     private Student mapStudent(ResultSet rs) throws SQLException {
         return new Student(
             rs.getInt("student_id"),

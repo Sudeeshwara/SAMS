@@ -4,10 +4,6 @@ import com.sams.util.DBConnection;
 import com.sams.util.SceneManager;
 import javafx.application.Application;
 import javafx.stage.Stage;
-
-/**
- * Application entry point.
- */
 public class MainApp extends Application {
 
     @Override

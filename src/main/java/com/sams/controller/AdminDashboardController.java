@@ -42,10 +42,7 @@ public class AdminDashboardController implements Initializable {
         showDashboard();
     }
 
-    // ══════════════════════════════════════════════════════════
     //  SIDEBAR NAVIGATION
-    // ══════════════════════════════════════════════════════════
-
     @FXML public void showDashboard()  { contentArea.getChildren().setAll(buildDashboardPanel()); }
     @FXML public void showCourses()    { contentArea.getChildren().setAll(buildCoursesPanel()); }
     @FXML public void showStudents()   { contentArea.getChildren().setAll(buildStudentsPanel()); }
@@ -61,10 +58,8 @@ public class AdminDashboardController implements Initializable {
         catch (Exception e) { e.printStackTrace(); }
     }
 
-    // ══════════════════════════════════════════════════════════
-    //  DASHBOARD PANEL
-    // ══════════════════════════════════════════════════════════
 
+    //  DASHBOARD PANEL
     private VBox buildDashboardPanel() {
         VBox root = new VBox(20);
 
@@ -101,10 +96,7 @@ public class AdminDashboardController implements Initializable {
         return card;
     }
 
-    // ══════════════════════════════════════════════════════════
     //  COURSES PANEL
-    // ══════════════════════════════════════════════════════════
-
     private VBox buildCoursesPanel() {
         VBox root = new VBox(16);
 
@@ -194,10 +186,7 @@ public class AdminDashboardController implements Initializable {
         });
     }
 
-    // ══════════════════════════════════════════════════════════
     //  STUDENTS PANEL
-    // ══════════════════════════════════════════════════════════
-
     private VBox buildStudentsPanel() {
         VBox root = new VBox(16);
         Label title = new Label("Student Management");
@@ -293,10 +282,7 @@ public class AdminDashboardController implements Initializable {
         });
     }
 
-    // ══════════════════════════════════════════════════════════
     //  LECTURERS PANEL
-    // ══════════════════════════════════════════════════════════
-
     private VBox buildLecturersPanel() {
         VBox root = new VBox(16);
         Label title = new Label("Lecturer Management");
@@ -376,9 +362,7 @@ public class AdminDashboardController implements Initializable {
         });
     }
 
-    // ══════════════════════════════════════════════════════════
     //  CLASS SCHEDULE PANEL
-    // ══════════════════════════════════════════════════════════
 
     private VBox buildSchedulePanel() {
         VBox root = new VBox(16);
@@ -480,10 +464,7 @@ public class AdminDashboardController implements Initializable {
         });
     }
 
-    // ══════════════════════════════════════════════════════════
     //  ATTENDANCE MARKING PANEL (Admin view)
-    // ══════════════════════════════════════════════════════════
-
     private VBox buildAttendancePanel() {
         VBox root = new VBox(16);
         Label title = new Label("Attendance Marking");
@@ -534,9 +515,7 @@ public class AdminDashboardController implements Initializable {
         return root;
     }
 
-    // ══════════════════════════════════════════════════════════
     //  REPORTS PANEL
-    // ══════════════════════════════════════════════════════════
 
     private VBox buildReportsPanel() {
         VBox root = new VBox(16);
@@ -597,10 +576,7 @@ public class AdminDashboardController implements Initializable {
         return root;
     }
 
-    // ══════════════════════════════════════════════════════════
     //  HELPERS
-    // ══════════════════════════════════════════════════════════
-
     @SuppressWarnings("unchecked")
     private <T> TableColumn<T, String> col(String header, String property) {
         TableColumn<T, String> c = new TableColumn<>(header);
@@ -677,10 +653,7 @@ public class AdminDashboardController implements Initializable {
         new Alert(Alert.AlertType.INFORMATION, msg, ButtonType.OK).showAndWait();
     }
 
-    // ══════════════════════════════════════════════════════════
     //  INLINE CELL — Status ComboBox
-    // ══════════════════════════════════════════════════════════
-
     private static class StatusComboCell extends TableCell<Attendance, String> {
         private final ComboBox<String> combo = new ComboBox<>(
             FXCollections.observableArrayList("PRESENT", "ABSENT", "LATE")

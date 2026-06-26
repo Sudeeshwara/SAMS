@@ -14,8 +14,7 @@ public class CourseService {
 
     private final CourseDAO courseDAO = new CourseDAO();
 
-    // ── Courses ────────────────────────────────────────────────
-
+    //Courses
     public List<Course> getAllCourses() throws SQLException {
         return courseDAO.getAllCourses();
     }
@@ -38,7 +37,7 @@ public class CourseService {
         return courseDAO.deleteCourse(id);
     }
 
-    // ── Subjects ───────────────────────────────────────────────
+    //Subjects
 
     public List<Subject> getAllSubjects() throws SQLException {
         return courseDAO.getAllSubjects();
@@ -62,7 +61,7 @@ public class CourseService {
         return courseDAO.deleteSubject(id);
     }
 
-    // ── Validation ─────────────────────────────────────────────
+    //Validation
 
     private void validateCourse(Course c) {
         if (c.getCourseCode() == null || c.getCourseCode().isBlank())

@@ -96,7 +96,7 @@ public class ClassSessionDAO {
         }
     }
 
-    // ── Mapper ─────────────────────────────────────────────────
+    //Mapper
     private ClassSession mapSession(ResultSet rs) throws SQLException {
         return new ClassSession(
             rs.getInt("session_id"),

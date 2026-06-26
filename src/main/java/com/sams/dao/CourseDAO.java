@@ -13,9 +13,7 @@ import java.util.List;
  */
 public class CourseDAO {
 
-    // ══════════════════════════════════════
     //  COURSES
-    // ══════════════════════════════════════
 
     public List<Course> getAllCourses() throws SQLException {
         List<Course> list = new ArrayList<>();

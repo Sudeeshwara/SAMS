@@ -53,7 +53,7 @@ public class LecturerDashboardController implements Initializable {
         catch (Exception e) { e.printStackTrace(); }
     }
 
-    // ─── Dashboard ───────────────────────────────────────────
+    //Dashboard
     private VBox buildDashboard() {
         VBox root = new VBox(20);
         Label title = new Label("My Dashboard");
@@ -85,7 +85,7 @@ public class LecturerDashboardController implements Initializable {
         return card;
     }
 
-    // ─── My Classes ──────────────────────────────────────────
+    // My Classes
     private VBox buildMyClassesPanel() {
         VBox root = new VBox(16);
         Label title = new Label("My Classes");
@@ -120,7 +120,7 @@ public class LecturerDashboardController implements Initializable {
         return root;
     }
 
-    // ─── Attendance Marking ───────────────────────────────────
+    // Attendance Marking Method
     private VBox buildAttendancePanel() {
         VBox root = new VBox(16);
         Label title = new Label("Mark Attendance");
@@ -177,7 +177,7 @@ public class LecturerDashboardController implements Initializable {
         return root;
     }
 
-    // ─── Reports ─────────────────────────────────────────────
+    //Reports
     private VBox buildReportsPanel() {
         VBox root = new VBox(16);
         Label title = new Label("Attendance Reports");

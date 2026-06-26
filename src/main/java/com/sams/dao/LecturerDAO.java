@@ -158,7 +158,7 @@ public class LecturerDAO {
         }
     }
 
-    // ── Mapper ─────────────────────────────────────────────────
+    //Mapper
     private Lecturer mapLecturer(ResultSet rs) throws SQLException {
         return new Lecturer(
             rs.getInt("lecturer_id"),
