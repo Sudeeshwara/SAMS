@@ -24,13 +24,13 @@
         <VBox styleClass="sidebar" spacing="4" prefWidth="200">
             <padding><Insets top="24" right="8" bottom="24" left="8"/></padding>
             <Label text="NAVIGATION" styleClass="sidebar-section-label"/>
-            <Button text="🏠  Dashboard"    onAction="#showDashboard"   styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="📚  Courses"       onAction="#showCourses"     styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="👩‍🎓  Students"      onAction="#showStudents"    styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="👨‍🏫  Lecturers"     onAction="#showLecturers"   styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="📅  Class Schedule" onAction="#showSchedule"   styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="✅  Attendance"     onAction="#showAttendance"  styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="📊  Reports"        onAction="#showReports"     styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Dashboard"    onAction="#showDashboard"   styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Courses"       onAction="#showCourses"     styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Students"      onAction="#showStudents"    styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Lecturers"     onAction="#showLecturers"   styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Class Schedule" onAction="#showSchedule"   styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Attendance"     onAction="#showAttendance"  styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Reports"        onAction="#showReports"     styleClass="sidebar-btn" maxWidth="Infinity"/>
         </VBox>
     </left>
 

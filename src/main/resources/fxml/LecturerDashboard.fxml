@@ -22,10 +22,10 @@
         <VBox styleClass="sidebar" spacing="4" prefWidth="200">
             <padding><Insets top="24" right="8" bottom="24" left="8"/></padding>
             <Label text="NAVIGATION" styleClass="sidebar-section-label"/>
-            <Button text="🏠  Dashboard"   onAction="#showDashboard"  styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="📅  My Classes"   onAction="#showMyClasses"  styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="✅  Attendance"   onAction="#showAttendance" styleClass="sidebar-btn" maxWidth="Infinity"/>
-            <Button text="📊  Reports"      onAction="#showReports"    styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Dashboard"   onAction="#showDashboard"  styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="My Classes"   onAction="#showMyClasses"  styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Attendance"   onAction="#showAttendance" styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="Reports"      onAction="#showReports"    styleClass="sidebar-btn" maxWidth="Infinity"/>
         </VBox>
     </left>
 

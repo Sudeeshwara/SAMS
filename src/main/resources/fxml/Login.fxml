@@ -15,7 +15,7 @@
             <Label text="SAMS" styleClass="brand-title"/>
             <Label text="Student Attendance" styleClass="brand-sub"/>
             <Label text="Management System"  styleClass="brand-sub"/>
-            <Label text="Track · Report · Manage" styleClass="brand-tagline"/>
+
         </VBox>
 
         <!-- Right panel — form -->
