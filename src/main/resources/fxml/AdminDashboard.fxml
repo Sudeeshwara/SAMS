@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.sams.controller.AdminDashboardController"
+            prefWidth="1100" prefHeight="700">
+
+    <!-- TOP NAV BAR -->
+    <top>
+        <HBox styleClass="topbar" alignment="CENTER_LEFT" spacing="16">
+            <padding><Insets top="14" right="24" bottom="14" left="24"/></padding>
+            <Label text="SAMS" styleClass="topbar-logo"/>
+            <Label text="Admin Portal" styleClass="topbar-subtitle"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="userLabel" styleClass="topbar-user"/>
+            <Button text="Logout" onAction="#handleLogout" styleClass="btn-outline-sm"/>
+        </HBox>
+    </top>
+
+    <!-- LEFT SIDEBAR -->
+    <left>
+        <VBox styleClass="sidebar" spacing="4" prefWidth="200">
+            <padding><Insets top="24" right="8" bottom="24" left="8"/></padding>
+            <Label text="NAVIGATION" styleClass="sidebar-section-label"/>
+            <Button text="🏠  Dashboard"    onAction="#showDashboard"   styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="📚  Courses"       onAction="#showCourses"     styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="👩‍🎓  Students"      onAction="#showStudents"    styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="👨‍🏫  Lecturers"     onAction="#showLecturers"   styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="📅  Class Schedule" onAction="#showSchedule"   styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="✅  Attendance"     onAction="#showAttendance"  styleClass="sidebar-btn" maxWidth="Infinity"/>
+            <Button text="📊  Reports"        onAction="#showReports"     styleClass="sidebar-btn" maxWidth="Infinity"/>
+        </VBox>
+    </left>
+
+    <!-- MAIN CONTENT AREA -->
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content-area">
+            <padding><Insets top="24" right="24" bottom="24" left="24"/></padding>
+        </StackPane>
+    </center>
+</BorderPane>

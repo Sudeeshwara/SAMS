@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.sams.controller.LoginController"
+           styleClass="root-pane"
+           prefWidth="900" prefHeight="600">
+
+    <HBox>
+        <!-- Left panel — branding -->
+        <VBox styleClass="login-brand-panel" alignment="CENTER" HBox.hgrow="ALWAYS">
+            <Label text="SAMS" styleClass="brand-title"/>
+            <Label text="Student Attendance" styleClass="brand-sub"/>
+            <Label text="Management System"  styleClass="brand-sub"/>
+            <Label text="Track · Report · Manage" styleClass="brand-tagline"/>
+        </VBox>
+
+        <!-- Right panel — form -->
+        <VBox styleClass="login-form-panel" alignment="CENTER" spacing="18"
+              prefWidth="380" HBox.hgrow="NEVER">
+            <padding><Insets top="60" right="50" bottom="60" left="50"/></padding>
+
+            <Label text="Sign In" styleClass="form-heading"/>
+            <Label text="Enter your credentials to continue" styleClass="form-subheading"/>
+
+            <VBox spacing="6">
+                <Label text="Username" styleClass="field-label"/>
+                <TextField fx:id="usernameField" promptText="Enter username" styleClass="text-field-custom"/>
+            </VBox>
+
+            <VBox spacing="6">
+                <Label text="Password" styleClass="field-label"/>
+                <PasswordField fx:id="passwordField" promptText="Enter password" styleClass="text-field-custom"/>
+            </VBox>
+
+            <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
+
+            <Button text="Sign In" onAction="#handleLogin"
+                    styleClass="btn-primary" maxWidth="Infinity"/>
+        </VBox>
+    </HBox>
+</StackPane>
